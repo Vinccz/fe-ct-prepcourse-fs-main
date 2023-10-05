@@ -22,12 +22,11 @@ function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
-   var array;
-   for (let i = 0; i < array.length; i++) {
-      array.push(array[i] + 1);
+   let newArr = {}
+   for (i = 0; i < array.length; i++){
+      newArr[i] = array.push(+ 1);
    }
-   return array;
-
+   return newArr;
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -57,6 +56,7 @@ function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código:
+   return (array.indexOf(elemento)!=-1)?true :false ;
 }
 
 function agregarNumeros(arrayOfNums) {
